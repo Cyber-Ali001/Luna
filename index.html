@@ -98,13 +98,13 @@ html,body{height:100%;background:var(--bg);color:var(--text);
   background:radial-gradient(ellipse at 80% 20%,rgba(61,184,245,.09) 0%,transparent 55%)}
 .bal-card::after{content:'';position:absolute;inset:0;
   background:radial-gradient(ellipse at 10% 90%,rgba(108,60,225,.07) 0%,transparent 55%)}
-.bal-row{display:flex;justify-content:space-between;align-items:flex-start;position:relative;z-index:1}
-.bal-left{}
-.bal-lbl{font-size:10px;letter-spacing:2px;color:var(--muted);text-transform:uppercase;margin-bottom:6px;font-weight:600}
-.bal-amt{font-family:'Syne',sans-serif;font-size:40px;font-weight:800;line-height:1;margin-bottom:4px}
+.bal-row{display:flex;justify-content:space-between;align-items:center;position:relative;z-index:1;gap:10px}
+.bal-left{flex:1;min-width:0}
+.bal-lbl{font-size:9px;letter-spacing:1.5px;color:var(--muted);text-transform:uppercase;margin-bottom:6px;font-weight:600}
+.bal-amt{font-family:'Syne',sans-serif;font-size:34px;font-weight:800;line-height:1;margin-bottom:4px}
 .bal-amt .sym{color:var(--green);font-size:30px;margin-right:2px}
 .bal-sub{font-size:12px;color:var(--sub)}
-.user-chip{display:flex;align-items:center;gap:8px}
+.user-chip{display:flex;align-items:center;gap:8px;flex-shrink:0;max-width:160px}
 .avatar{
   width:46px;height:46px;border-radius:50%;overflow:hidden;
   border:2px solid rgba(61,184,245,.3);
@@ -115,7 +115,7 @@ html,body{height:100%;background:var(--bg);color:var(--text);
 }
 .avatar img{width:100%;height:100%;object-fit:cover}
 .user-info{text-align:right}
-.user-name{font-weight:600;font-size:13px;color:var(--text)}
+.user-name{font-weight:600;font-size:12px;color:var(--text);max-width:90px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;text-align:right}
 .user-id{font-size:10px;color:var(--muted);margin-top:2px}
 .bal-tags{display:flex;flex-wrap:wrap;gap:6px;margin-top:16px;position:relative;z-index:1}
 .bal-tag{
@@ -560,7 +560,7 @@ html,body{height:100%;background:var(--bg);color:var(--text);
 // ══════════════════════════════════════════════════════════════
 //  CONFIG
 // ══════════════════════════════════════════════════════════════
-const BOT_USERNAME = "AFGDING2025BOT";
+const BOT_USERNAME = "Dollar_Pay0_Bot";
 const AD_REWARD    = 0.20;
 const INV_REWARD   = 0.40;
 const TASK_REWARD  = 0.05;
